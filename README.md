@@ -7,4 +7,7 @@ Use it like:
 ```
 docker run --name attoc -v /volume2/music/:/music  -it eddie303/attoc 
 ```
-where /volume2/music is the share containing music files.
+where /volume2/music is the share containing music files. Afterwards if you don't delete de container, just run:
+```
+docker start attoc
+```
