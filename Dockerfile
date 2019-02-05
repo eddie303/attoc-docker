@@ -8,6 +8,7 @@ RUN rm -f /etc/localtime && ln -s /usr/share/zoneinfo/Europe/Bucharest /etc/loca
  && echo "Europe/Bucharest" > /etc/timezone \
  && apt-get update \
  && apt-get -y dist-upgrade \
- && apt-get install -y libmp3-info-perl libmp3-tag-perl libaudio-wav-perl libcompress-raw-zlib-perl
+ && apt-get install -y libmp3-info-perl libmp3-tag-perl libaudio-wav-perl libcompress-raw-zlib-perl \
+ && chmod +x /usr/local/bin/*
 
 CMD ["/usr/local/bin/entrypoint.sh"]
